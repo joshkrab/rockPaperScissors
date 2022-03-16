@@ -67,7 +67,7 @@ const processGame = {
             `Round ${this.round}, ${this.getName(
                this.random
             )} vs. ${this.getName(+userChoise)}, ${this.value}` +
-            '\n*** Computer Win! ***';
+            `<br />***** Computer Win! *****`;
 
          this.color = 'item-red-style';
          //  this.result = 'Computer Win';
@@ -77,7 +77,7 @@ const processGame = {
             `Round ${this.round}, ${this.getName(
                this.random
             )} vs. ${this.getName(+userChoise)}, ${this.value}` +
-            '\n*** Congratulations! You Win! ***';
+            `<br />***** Congratulations! You Win! *****`;
 
          this.color = 'item-green-style';
          //  this.result = 'Congratulations! You Win!';
