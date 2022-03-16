@@ -169,8 +169,12 @@ button:hover {
    }
 
    .rules {
-      height: 110px;
+      height: 130px;
       width: 260px;
+   }
+   .rules h2 {
+      font-size: 18px;
+      margin: 0px 0px 5px 0px;
    }
 
    .rules p {
