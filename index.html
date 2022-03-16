@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tools</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+  <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+  <div class="warpper">
+    <div class="game-content">
+      <div class="rules">
+      <h2>Rules of the game:</h2>
+        <P>
+          - Scissors beats a paper,</br>
+          - Paper beats rock,</br>
+          - Rock beats scissors.</br>
+          - And we play up to three wins!</p>
+      </div>
+      <div class="game-controller">
+        <button class="controls-button" value="0">
+          <img src="./img/stone.png" alt="stone">
+          <p>Rock</p>
+        </button>
+        <button class="controls-button" value="1">
+          <img src="./img/paper.png" alt="stone">
+          <p>Paper</p></button>
+        <button class="controls-button" value="2">
+          <img src="./img/scissors.png" alt="stone">
+          <p>Scissors</p></button>
+      </div>
+      <div id="log">
+      </div>
+      <button id="reset" value="reset">Reset</button>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

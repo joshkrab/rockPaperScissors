@@ -1,0 +1,189 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-size: larger;
+   padding: 20px;
+}
+
+.warpper {
+   margin-top: 5px;
+   height: 500px;
+   width: 500px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 5px;
+   border: 1px solid gray;
+   background-color: rgb(202, 168, 168);
+   display: flex;
+   justify-content: center;
+   box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.game-content {
+   height: 500px;
+   width: 460px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.rules {
+   text-align: center;
+   border-radius: 5px;
+   border: 2px solid green;
+   background-color: white;
+   height: 160px;
+   width: 400px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.rules p {
+   padding: 10px 0px 0px 20px;
+   text-align: left;
+}
+
+button {
+   color: rgb(0, 0, 0);
+   font-size: 16px;
+   border-color: green;
+   background-color: rgb(228, 192, 192);
+   border-width: 2px;
+   border-radius: 5px;
+}
+button:active {
+   border-color: green;
+   background-color: rgb(218, 191, 191);
+   border-width: 3px;
+   border-radius: 5px;
+}
+button img {
+   /* width: 40px; */
+   height: 40px;
+   object-fit: contain;
+}
+
+button p,
+button img {
+   margin: 0;
+   padding: 0;
+   pointer-events: none;
+}
+
+.controls-button {
+   height: 80px;
+   width: 130px;
+}
+
+button:hover {
+   cursor: pointer;
+}
+
+#reset {
+   color: green;
+   border-color: white;
+   font-weight: 600;
+   font-size: 16px;
+   height: 30px;
+   width: 120px;
+}
+#reset:active {
+   color: rgb(2, 114, 2);
+   transform: translate(2px, 1px);
+}
+
+#log {
+   border-radius: 5px;
+   border: 2px solid green;
+   background-color: white;
+   width: 400px;
+   height: 150px;
+   box-sizing: border-box;
+   overflow: auto;
+   text-align: center;
+}
+#log p {
+   margin-bottom: 1px;
+}
+.item-red-style {
+   border-radius: 5px;
+   border: 1px solid rgb(207, 105, 105);
+   background-color: pink;
+}
+.item-green-style {
+   border-radius: 5px;
+   border: 1px solid green;
+   background-color: lightgreen;
+}
+.item-yellow-style {
+   border-radius: 5px;
+   border: 1px solid rgb(255, 187, 0);
+   background-color: lightyellow;
+}
+
+@media (max-width: 600px) {
+   html {
+      height: 100%;
+   }
+   body {
+      height: 100%;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+   }
+   .warpper {
+      height: 100%;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 0px;
+      box-shadow: none;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+   }
+
+   .game-content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      box-sizing: border-box;
+   }
+
+   #log {
+      width: 260px;
+      height: 150px;
+   }
+
+   #log p {
+      font-size: 14px;
+   }
+
+   .rules {
+      height: 110px;
+      width: 260px;
+   }
+
+   .rules p {
+      font-size: 16px;
+      padding: 0px 0px 0px 0px;
+   }
+
+   .game-controller {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .controls-button {
+      margin: 5px;
+   }
+}
